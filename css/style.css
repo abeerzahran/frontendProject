@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@media screen and (max-width:2000px) {
+    .slideImg
+    {
+        height: 600px
+    }
+    .category span
+    {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:800px) {
+    .nav-menu
+    {
+        visibility: hidden;
+    }
+    .slideImg
+    {
+        height: 400px
+    }
+    .nav
+    {
+        height: 70px;
+    }
+    .category span
+    {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .slideImg
+    {
+        height:300px
+    }
+    .category span
+    {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:300px) {
+    .slideImg
+    {
+        height:200px
+    }
+    .arrows
+    {
+        display: none;
+    }
+    .category span
+    {
+        font-size: 12px;
+    }
+    .productName
+    {
+        font-size: 15px;
+    }
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.nav
+{
+    z-index: 3000;
+}
+.row
+{
+    max-width: 100%;
+}
+.logo span
+{
+    font-family:Courgette ;
+}
+a
+{
+    text-decoration: none;
+    font-family: Montserrat ;
+}
+.sidebar
+{
+    z-index: 20000;
+    position: absolute;
+    width: max-content;
+    height: 100vh;
+    width: 280px;
+}
+.showSidebar
+{
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+    transition-duration: .2s;
+}
+.hideSidebar
+{
+
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
+    transition-duration: .2s;
+}
+.fa-cart-shopping
+{
+    height: 30px;
+    width: 35px;
+    
+}
+.cartNum
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bolder;
+    background-color: rgb(182, 189, 202);
+}
+
+.arrows
+{
+    width: 5%;
+    height: 10%;
+    opacity: .3;
+}
+.arrows:hover
+{
+    opacity: 1;
+}
+.shop
+{
+    font-family:Courgette ;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(34,54,89);
+}
+.types
+{
+    background-color: rgb(176, 180, 233);
+}
+.category img
+{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+}
+.category span
+{
+    text-align: center;
+
+}
+.cardcol
+{
+    display: flex;
+}
+.card
+{
+    overflow: hidden;
+    border-radius: 10%;
+}
+.card-img:hover
+{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.img_div
+{
+    overflow: hidden;
+}
+.cartadd
+{
+    width: 15%;
+    height: 11%;
+    border-radius: 50%;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    color: black;
+    background-color: rgb(182, 175, 189);
+    display: flex;
+    z-index: 2000;
+}
+.incart
+{
+    display: none;
+    z-index: 2000;
+}
+.cartadd:hover
+{
+    background-color: rgb(69, 71, 94);
+    color:aliceblue
+}
+p
+{
+    font-family:Montserrat ;
+}
+.product-details
+{
+    padding-top: 100px;
+}
+.cart
+{
+    padding-top: 130px;
+    text-align: center;
+    font: 60px Courgette;
+}
+.checkout
+{
+    background-color: rgba(71, 172, 25, 0.733);
+    color: aliceblue;
+}
+.checkout:hover
+{
+    background-color: rgb(147, 199, 147);
+    color: black;
+}
+.signin
+{
+    z-index: 10000;
+    margin: auto;
+    display: none;
+    background-color: rgba(167, 167, 253, 0.952);
+}
+.signup
+{
+    z-index: 10100;
+    margin: auto;
+    display: none;
+    background-color: rgba(155, 155, 250, 0.952);
+
+}
+.invalid 
+{
+    display: none;
+}
+.exist
+{
+    display: none;
+}
+.successcheck
+{
+    display: none;
+}
+.scrollUp
+{
+    z-index: 10000;
+}
+.about
+{
+    padding-top: 100px;
+}
+.contact 
+{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-image: url(/images/contact2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.social
+{
+    display: flex;
+    flex-direction: row;
+}
+.send
+{
+    background-color: rgb(52, 73, 117);
+    color: aliceblue;
+    border: 0;
+}
+.send:hover
+{
+    background-color: rgb(67, 143, 187);
+    color: black;
+}
